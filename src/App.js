@@ -1,9 +1,12 @@
-import Header from './components/Header';
-
+import HeaderComponent from './components/HeaderComponent';
+import Home from './pages/Home';
 function App() {
 	return (
 		<div>
-			<Header />
+			<HeaderComponent />
+			<div>
+				<Home />
+			</div>
 		</div>
 	)
 }

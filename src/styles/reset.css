@@ -50,3 +50,11 @@ button{
 	overflow:visible;
 	cursor:pointer;
 }
+
+* {
+	user-select: none;
+}
+
+img {
+	pointer-events: none;
+}

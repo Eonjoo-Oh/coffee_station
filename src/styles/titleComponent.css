@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'kohibaeum';
+	src: url('../styles/fonts/KOHIBaeumOTF.otf') format('opentype'),
+		 url('../styles/fonts/KOHIBaeum.ttf') format('truetype');
+  }
+
+.titleComponent {
+	padding-top: 60px;
+	display: flex;
+	flex-direction: column;
+	font-family: kohibaeum;
+	font-size: 60px;
+	line-height: 150%;
+	color: #043959;
+}
