@@ -24,6 +24,8 @@
 	height: 100%;
 	object-fit: contain;
 	pointer-events: none;
+	user-select: none;
+
 }
 
 .home__character {
