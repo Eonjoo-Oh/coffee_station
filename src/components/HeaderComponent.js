@@ -1,10 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import '../styles/header.css';
+import headerLogo from '../assets/images/header_logo.png';
+
 const HeaderComponent = () => {
 	return (
 		<header className="header">
 			<div className="header__logo">
-				<img src="/images/header_logo.png" alt="coffee station logo"></img>
+				<img src={headerLogo} alt="coffee station logo"></img>
 			</div>
 			<div className="header__menus">
 				<div className="header__menus__menu">
