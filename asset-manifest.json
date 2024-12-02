@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/coffee_station/static/css/main.1008ab3e.css",
+    "main.js": "/coffee_station/static/js/main.10bcfaf9.js",
+    "static/media/KOHIBaeum.ttf": "/coffee_station/static/media/KOHIBaeum.c7467426cef68ccdc110.ttf",
+    "static/media/KOHIBaeumOTF.otf": "/coffee_station/static/media/KOHIBaeumOTF.f7b9e97196fd2d1a3f34.otf",
+    "index.html": "/coffee_station/index.html",
+    "main.1008ab3e.css.map": "/coffee_station/static/css/main.1008ab3e.css.map",
+    "main.10bcfaf9.js.map": "/coffee_station/static/js/main.10bcfaf9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1008ab3e.css",
+    "static/js/main.10bcfaf9.js"
+  ]
+}
