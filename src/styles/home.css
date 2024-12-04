@@ -46,4 +46,9 @@
 	padding: 0;
 	margin: 0;
 	object-fit: cover;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
 }
