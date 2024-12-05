@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "../styles/titleComponent.css";
 
-const TitleComponent = ({ firstTitle, secondTitle }) => {
+const TypingTwoLineHeader = ({ firstTitle, secondTitle, onTypingEnd }) => {
 	useEffect(() => {
 		let firstTyping = document.querySelector('#firstTitle');
-		
+
 		if (secondTitle) {
 			let secondTyping = document.querySelector('#secondTitle');
 			secondTyping.style.display = 'none';
@@ -13,10 +13,20 @@ const TitleComponent = ({ firstTitle, secondTitle }) => {
 					secondTyping.style.display = 'block';
 					window.TypeHangul.type('#secondTitle', {intervalType: 76});
 				}, 500);
+				if (onTypingEnd) {
+					secondTyping.addEventListener('th.endType', function(e) {
+						onTypingEnd();
+					})
+				}
 			});
 		}
 		if (window.TypeHangul) {
 			window.TypeHangul.type("#firstTitle", {intervalType: 80});
+			if (!secondTitle && onTypingEnd) {
+				firstTyping.addEventListener('th.endType', function(e) {
+					onTypingEnd();
+				})
+			}
 		} else {
 			console.error("TypeHangul이 로드되지 않았습니다.");
 		} // eslint-disable-next-line
@@ -30,5 +40,5 @@ const TitleComponent = ({ firstTitle, secondTitle }) => {
   );
 };
 
-export default TitleComponent;
+export default TypingTwoLineHeader;
 
