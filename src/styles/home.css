@@ -33,22 +33,23 @@
 }
 
 .home__title {
+	padding: 60px 0px;
 	display: flex;
 	flex-direction: column;
-	/* animation: fadeInMove 1s ease-out; */
+	font-family: kohibaeum;
+	font-size: 60px;
+	color: #043950;
+	line-height: 150%;
+	/* border: solid 3px tomato; */
+	animation: fadeInMove 1.4s ease-out;
 }
 
 .home__title--logo {
 	width: 545px;
-	height: 82px;
+	/* height: 82px;
 	opacity: 0;
 	transform: translateY(20px);
-	transition: opacity 1s ease, transform 1s ease;
-}
-
-.home__title--logo.show {
-	opacity: 1;
-	transform: translateY(0);
+	transition: opacity 1s ease, transform 1s ease; */
 }
 
 .home__title--logo img {

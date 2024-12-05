@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import "../styles/titleComponent.css";
 
-const TypingTwoLineHeader = ({ firstTitle, secondTitle, onTypingEnd }) => {
+const TypingTwoLine = ({ firstTitle, secondTitle, onTypingEnd }) => {
 	useEffect(() => {
 		let firstTyping = document.querySelector('#firstTitle');
 
@@ -40,5 +39,8 @@ const TypingTwoLineHeader = ({ firstTitle, secondTitle, onTypingEnd }) => {
   );
 };
 
-export default TypingTwoLineHeader;
+export default TypingTwoLine;
 
+/*
+index.html에 type-hangul CDN 추가하기
+*/
