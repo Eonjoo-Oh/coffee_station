@@ -7,25 +7,13 @@
 @keyframes fadeInMove {
 	from {
 		opacity: 0;
-		transform: translateY(50px); /* 아래에서 위로 올라오게 */
+		transform: translateY(50px);
 	}
 	to {
 		opacity: 1;
-		transform: translateY(0); /* 원래 위치로 */
+		transform: translateY(0);
 	}
 }
-
-@keyframes slideInFromRight {
-	from {
-		transform: translateX(100%); /* 화면 오른쪽 밖 */
-		opacity: 0; /* 투명하게 시작 */
-	}
-	to {
-		transform: translateX(0); /* 원래 위치 */
-		opacity: 1; /* 완전히 보임 */
-	}
-}
-
 
 .home {
 	padding: 120px 60px;
@@ -41,15 +29,13 @@
 	color: #043950;
 	line-height: 150%;
 	/* border: solid 3px tomato; */
-	animation: fadeInMove 1.4s ease-out;
+	opacity: 0;
+	animation: fadeInMove 1.4s ease-out 0.4s forwards;
 }
 
 .home__title--logo {
 	width: 545px;
-	/* height: 82px;
-	opacity: 0;
-	transform: translateY(20px);
-	transition: opacity 1s ease, transform 1s ease; */
+	height: 82px;
 }
 
 .home__title--logo img {
@@ -70,9 +56,6 @@
 	position: absolute;
 	right: 0;
 	bottom: 120px;
-	/* border: solid tomato 3px; */
-	/* animation: slideInFromRight 1.5s ease-out; */
-	/* animation-delay: 0.5s; */
 }
 
 .home__character img {
