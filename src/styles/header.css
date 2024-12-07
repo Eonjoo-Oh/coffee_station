@@ -2,7 +2,7 @@
 	font-family: 'kohibaeum';
 	src: url('../styles/fonts/KOHIBaeumOTF.otf') format('opentype'),
 		 url('../styles/fonts/KOHIBaeum.ttf') format('truetype');
-  }
+}
 
 .header {
 	width: 100%;

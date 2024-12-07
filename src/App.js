@@ -1,4 +1,5 @@
 import HeaderComponent from './components/HeaderComponent';
+import DBFooterComponents from './components/DBFooterComponents';
 import Home from './pages/Home';
 function App() {
 	return (
@@ -7,6 +8,7 @@ function App() {
 			<div>
 				<Home />
 			</div>
+			<DBFooterComponents />
 		</div>
 	)
 }
