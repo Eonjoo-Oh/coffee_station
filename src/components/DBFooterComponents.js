@@ -15,7 +15,7 @@ const DBFooterComponents = () => {
                 </div>
                 <div className='dbfooter__input--checkbox'>
                     <input type='checkbox' id='personalInfoCheckbox'></input>
-                    <label htmlFor='personalInfoCheckbox'>개인정보 수집 동의</label>
+                    <label for='personalInfoCheckbox'>개인정보 수집 동의</label>
                 </div>
                 <button>문의하기</button>
             </div>
